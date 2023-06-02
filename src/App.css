@@ -12,7 +12,9 @@ label {
 header {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   text-align: center;
-  font-family: 'Playfair Display SC'
+  font-family: 'Playfair Display SC';
+  font-size: 64px;
+  background-color: skyblue;
 }
 
 /* typography */
@@ -57,6 +59,52 @@ table {
 }
 
 /* Column Size for thead */
+.recipe-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
 
+.recipe-list th,
+.recipe-list td {
+  padding: 10px;
+  text-align: left;
+}
 
-/* Column size for tbody */
+.recipe-list th:nth-child(1),
+.recipe-list td:nth-child(1) {
+  width: 10%;
+}
+
+.recipe-list th:nth-child(2),
+.recipe-list td:nth-child(2) {
+  width: 10%;
+}
+
+.recipe-list th:nth-child(3),
+.recipe-list td:nth-child(3) {
+  width: 10%;
+}
+
+.recipe-list th:nth-child(4),
+.recipe-list td:nth-child(4) {
+  width: 30%;
+}
+
+.recipe-list th:nth-child(5),
+.recipe-list td:nth-child(5) {
+  width: 30%;
+}
+
+.recipe-list th:nth-child(6),
+.recipe-list td:nth-child(6) {
+  width: 10%;
+}
+.recipe-list img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.recipe-list tbody tr:nth-child(odd) {
+  background-color: yellow;
+}

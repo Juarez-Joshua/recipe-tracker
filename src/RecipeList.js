@@ -25,9 +25,6 @@ function RecipeList({recipes, deleteRecipe}) {
           return <Recipe recipe={recipe} deleteRecipe={deleteRecipe}/>
 })}
         </tbody>
-        <tfoot>
-          
-        </tfoot>
       </table>
     </div>
   );

@@ -19,9 +19,7 @@ function RecipeCreate({recipes, setRecipes}) {
     event.preventDefault();
     setRecipes([...recipes,formData]);
     setFormData({...initalData});
-    console.log(recipes);
   }
-  console.log(recipes);
   return (
     <form name="create" onSubmit={submitHandler}>
       <table>

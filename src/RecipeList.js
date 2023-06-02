@@ -1,6 +1,7 @@
 import React from "react";
+import Recipe from "./Recipe";
 
-function RecipeList() {
+function RecipeList({recipes, deleteRecipe}) {
   
   // TODO: Display the list of recipes using the structure of table that is provided.
   // TODO: Create at least one additional component that is used by this component.
@@ -11,13 +12,22 @@ function RecipeList() {
       <table>
         <thead>
           <tr>
-            <th></th>
+            <th>Name</th>
+            <th>Cuisine</th>
+            <th>Photo</th>
+            <th>Ingredients</th>
+            <th>Preparation</th>
             <th>Actions</th>
           </tr>
-        </thead>
+        </thead>  
         <tbody>
-        
+          {recipes.map((recipe)=>{
+          return <Recipe recipe={recipe} deleteRecipe={deleteRecipe}/>
+})}
         </tbody>
+        <tfoot>
+          
+        </tfoot>
       </table>
     </div>
   );
